@@ -1,0 +1,8 @@
+services:
+  server:
+    volumes:
+      # Volume for the source code
+      - ./src:/app/src
+    build:
+      context: .
+      dockerfile: Dockerfile
